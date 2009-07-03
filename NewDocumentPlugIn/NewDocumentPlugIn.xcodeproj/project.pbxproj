@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		21ECF3C70F4C18A60018EEEC /* Dist */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 21ECF3CB0F4C18B70018EEEC /* Build configuration list for PBXAggregateTarget "Dist" */;
+			buildPhases = (
+				21ECF3CF0F4C18CC0018EEEC /* Update Disk Image */,
+				218852190F4C504E0024C340 /* Copy Disk Image */,
+			);
+			comments = "Update the NewDocumentPlugIn.dmg disk image with the modified dist files or build products.\n\nThe resulting disk image is then copied into \"build/Dist\".";
+			dependencies = (
+				21ECF3CD0F4C18BE0018EEEC /* PBXTargetDependency */,
+			);
+			name = Dist;
+			productName = Dist;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		210FA8440F4C4EE600B375A9 /* NewDocumentPlugIn.c in Sources */ = {isa = PBXBuildFile; fileRef = 210FA8420F4C4EE600B375A9 /* NewDocumentPlugIn.c */; };
+		210FA8450F4C4EE600B375A9 /* NewDocumentPlugIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 210FA8430F4C4EE600B375A9 /* NewDocumentPlugIn.h */; };
+		213917300F3C59E5001C060E /* NewDocumentPlugIn.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21A651EE0F3AE77A00453D20 /* NewDocumentPlugIn.plugin */; };
+		21668CD70F404ED4002F8946 /* EditFinderItem.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 21668CD00F404E6E002F8946 /* EditFinderItem.scpt */; };
+		2188522E0F4C51090024C340 /* NewDocumentPlugIn.dmg in Copy Disk Image */ = {isa = PBXBuildFile; fileRef = 218852280F4C51090024C340 /* NewDocumentPlugIn.dmg */; };
+		21CC41A10F3DD1800091F327 /* Templates in Resources */ = {isa = PBXBuildFile; fileRef = 21CC41980F3DD1800091F327 /* Templates */; };
+		21CC42090F3DE7570091F327 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F94F01B07B3098F00AE9F13 /* Info.plist */; };
+		21D45D730F442F6C00708021 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21D45D720F442F6C00708021 /* Localizable.strings */; };
+		4F94F01307B3098F00AE9F13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		4F94F01907B3098F00AE9F13 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60764980009F79710BCA0CAD /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21ECF3CC0F4C18BE0018EEEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F94F01007B3098F00AE9F13;
+			remoteInfo = NewDocumentPlugIn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2122E6050F3AE9A700499515 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "/Library/Contextual Menu Items";
+			dstSubfolderSpec = 0;
+			files = (
+				213917300F3C59E5001C060E /* NewDocumentPlugIn.plugin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		218852190F4C504E0024C340 /* Copy Disk Image */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "Copy the updated NewDocumentPlugIn.dmg disk image into the \"build/Dist\" directory.";
+			dstPath = ../Dist;
+			dstSubfolderSpec = 16;
+			files = (
+				2188522E0F4C51090024C340 /* NewDocumentPlugIn.dmg in Copy Disk Image */,
+			);
+			name = "Copy Disk Image";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		210576030F4C972D001D769E /* appletMiniIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appletMiniIcon.png; sourceTree = "<group>"; };
+		210576040F4C972D001D769E /* rtfMiniIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rtfMiniIcon.png; sourceTree = "<group>"; };
+		210FA8420F4C4EE600B375A9 /* NewDocumentPlugIn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NewDocumentPlugIn.c; sourceTree = "<group>"; };
+		210FA8430F4C4EE600B375A9 /* NewDocumentPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDocumentPlugIn.h; sourceTree = "<group>"; };
+		21668CD00F404E6E002F8946 /* EditFinderItem.scpt */ = {isa = PBXFileReference; explicitFileType = sourcecode.scpt; fileEncoding = 4; path = EditFinderItem.scpt; sourceTree = "<group>"; };
+		216E6FA00F4348C900EB9338 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		218852270F4C51090024C340 /* DistBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DistBackground.png; sourceTree = "<group>"; };
+		218852280F4C51090024C340 /* NewDocumentPlugIn.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewDocumentPlugIn.dmg; sourceTree = "<group>"; };
+		218852290F4C51090024C340 /* Open Templates Folder.app */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "Open Templates Folder.app"; sourceTree = "<group>"; };
+		2188522A0F4C51090024C340 /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		21A651EE0F3AE77A00453D20 /* NewDocumentPlugIn.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewDocumentPlugIn.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CC41980F3DD1800091F327 /* Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Templates; sourceTree = "<group>"; };
+		21D45D700F442F6800708021 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		21D45DF70F443EE600708021 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F94F01B07B3098F00AE9F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60764980009F79710BCA0CAD /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F94F01607B3098F00AE9F13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F94F01907B3098F00AE9F13 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* SampleCMPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				218852250F4C51090024C340 /* Dist resources */,
+				210FA8410F4C4EC600B375A9 /* Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = SampleCMPlugin;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				60764980009F79710BCA0CAD /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21D45D720F442F6C00708021 /* Localizable.strings */,
+				21668CD00F404E6E002F8946 /* EditFinderItem.scpt */,
+				21CC41980F3DD1800091F327 /* Templates */,
+				4F94F01B07B3098F00AE9F13 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21A651EE0F3AE77A00453D20 /* NewDocumentPlugIn.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		210FA8410F4C4EC600B375A9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				210FA8420F4C4EE600B375A9 /* NewDocumentPlugIn.c */,
+				210FA8430F4C4EE600B375A9 /* NewDocumentPlugIn.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		218852250F4C51090024C340 /* Dist resources */ = {
+			isa = PBXGroup;
+			children = (
+				210576030F4C972D001D769E /* appletMiniIcon.png */,
+				210576040F4C972D001D769E /* rtfMiniIcon.png */,
+				218852270F4C51090024C340 /* DistBackground.png */,
+				218852280F4C51090024C340 /* NewDocumentPlugIn.dmg */,
+				218852290F4C51090024C340 /* Open Templates Folder.app */,
+				2188522A0F4C51090024C340 /* ReadMe.rtf */,
+			);
+			path = "Dist resources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4F94F01107B3098F00AE9F13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210FA8450F4C4EE600B375A9 /* NewDocumentPlugIn.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4F94F01007B3098F00AE9F13 /* NewDocumentPlugIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F2B05ED08A02B3E0055E173 /* Build configuration list for PBXNativeTarget "NewDocumentPlugIn" */;
+			buildPhases = (
+				4F94F01107B3098F00AE9F13 /* Headers */,
+				4F94F01207B3098F00AE9F13 /* Resources */,
+				4F94F01407B3098F00AE9F13 /* Sources */,
+				4F94F01607B3098F00AE9F13 /* Frameworks */,
+				4F94F01A07B3098F00AE9F13 /* Rez */,
+				2122E6050F3AE9A700499515 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewDocumentPlugIn;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = SampleCMPlugin;
+			productReference = 21A651EE0F3AE77A00453D20 /* NewDocumentPlugIn.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4F2B05F108A02B3E0055E173 /* Build configuration list for PBXProject "NewDocumentPlugIn" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* SampleCMPlugin */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F94F01007B3098F00AE9F13 /* NewDocumentPlugIn */,
+				21ECF3C70F4C18A60018EEEC /* Dist */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F94F01207B3098F00AE9F13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F94F01307B3098F00AE9F13 /* InfoPlist.strings in Resources */,
+				21CC41A10F3DD1800091F327 /* Templates in Resources */,
+				21CC42090F3DE7570091F327 /* Info.plist in Resources */,
+				21668CD70F404ED4002F8946 /* EditFinderItem.scpt in Resources */,
+				21D45D730F442F6C00708021 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		4F94F01A07B3098F00AE9F13 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21ECF3CF0F4C18CC0018EEEC /* Update Disk Image */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			comments = "Update the NewDocumentPlugIn.dmg disk image with the modified dist files or build products.";
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Disk Image";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"Dist resources\"\n\n# Detach any previous diskimage\nhdiutil detach -quiet /Volumes/NewDocumentPlugIn || true\n\n# Open diskimage in shadow (read/write) mode\nhdiutil attach -quiet -owners on NewDocumentPlugIn.dmg -shadow image.shadow\n\n# Update files in disk image\ncp -r $BUILT_PRODUCTS_DIR/NewDocumentPlugIn.plugin /Volumes/NewDocumentPlugIn\ncp -r \"Open Templates Folder.app\" /Volumes/NewDocumentPlugIn\nditto ReadMe.rtf /Volumes/NewDocumentPlugIn/\n\n# Unmount diskimage and update the original image file\nhdiutil detach -quiet /Volumes/NewDocumentPlugIn\nhdiutil convert -quiet -ov -format UDBZ -o NewDocumentPlugIn.dmg -shadow image.shadow NewDocumentPlugIn.dmg\n\n# Cleanup\nrm -f image.shadow";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F94F01407B3098F00AE9F13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210FA8440F4C4EE600B375A9 /* NewDocumentPlugIn.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21ECF3CD0F4C18BE0018EEEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F94F01007B3098F00AE9F13 /* NewDocumentPlugIn */;
+			targetProxy = 21ECF3CC0F4C18BE0018EEEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+				216E6FA00F4348C900EB9338 /* French */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		21D45D720F442F6C00708021 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21D45D700F442F6800708021 /* English */,
+				21D45DF70F443EE600708021 /* French */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21ECF3C80F4C18A60018EEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Dist;
+			};
+			name = Debug;
+		};
+		21ECF3C90F4C18A60018EEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Dist;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4F2B05EE08A02B3E0055E173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "Library/Contextual Menu Items";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PRODUCT_NAME = NewDocumentPlugIn;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		4F2B05EF08A02B3E0055E173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /;
+				GCC_MODEL_TUNING = G5;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "Library/Contextual Menu Items";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PRODUCT_NAME = NewDocumentPlugIn;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		4F2B05F208A02B3E0055E173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+			};
+			name = Debug;
+		};
+		4F2B05F308A02B3E0055E173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(NATIVE_ARCH_32_BIT)",
+					ppc,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21ECF3CB0F4C18B70018EEEC /* Build configuration list for PBXAggregateTarget "Dist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21ECF3C80F4C18A60018EEEC /* Debug */,
+				21ECF3C90F4C18A60018EEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F2B05ED08A02B3E0055E173 /* Build configuration list for PBXNativeTarget "NewDocumentPlugIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F2B05EE08A02B3E0055E173 /* Debug */,
+				4F2B05EF08A02B3E0055E173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F2B05F108A02B3E0055E173 /* Build configuration list for PBXProject "NewDocumentPlugIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F2B05F208A02B3E0055E173 /* Debug */,
+				4F2B05F308A02B3E0055E173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

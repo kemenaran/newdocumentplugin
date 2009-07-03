@@ -1,0 +1,90 @@
+{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\vieww13320\viewh8740\viewkind0
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\f0\b\fs36 \cf0 NewDocumentPlugIn\
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\b0\fs24 \cf0 \
+This plugin adds a new entry to the Finder contextual menu, allowing to create on-the-fly new documents of various types.\
+\
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\b\fs28 \cf0 Installation\
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\b0\fs24 \cf0 \
+To install, just copy the plugin into the "/Library/Contextual Menu Items" directory.\
+To uninstall, delete the plugin from the "Contextual Menu Items" directory.\
+\
+Changes will take effect after closing and reopening your session (or you can restart the Finder using the "Force to quit" dialog).\
+\
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\b \cf0 Note that you will have a better experience if \ul GUI Scripting\ulnone  is enabled.
+\b0  To be sure that GUI Scripting is enabled, open the "Applescript Utility" application in your "Application/Utilities" folder, and look if the "Enable GUI Scripting" checkbox is checked.\
+\
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\b\fs28 \cf0 Usage\
+\
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\b0\fs24 \cf0 Right-click in a Finder window, or on a folder, highlight the "New Document" submenu, and select the document you want to create.\
+\
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\b\fs28 \cf0 Adding new document templates\
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\b0\fs24 \cf0 \
+To add your own custom templates, open the Templates folder, located inside the plugin bundle (for this you can use the "Open Template Folder" script in the Installation Disk Image). You can then edit the predefined templates or add new ones. \
+\
+If you add a new template, just give it a typename and an extension, like "Word.doc" : the typename will be inserted at the right place in the localized menus.\
+\
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\b\fs28 \cf0 Versions\
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\b0\fs24 \cf0 1.1.2:	* Now hosted on GoogleCode\
+	* Added an MIT-style licence\
+	* Better hints on how enable GUI Scripting\
+1.1.1:	* Fixed the corrupted Pages template
+\b\fs28 \
+
+\b0\fs24 1.1: 	* Fixed a few memory leaks\
+	* The target "Dist" now automatically builds a diskimage suitable for distribution\
+	* The "Open Templates Folder" script app name is now localized in the Finder.\
+	* Better script error codes\
+1.0: First release\
+\
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\ql\qnatural
+
+\b\fs28 \cf0 Licence
+\b0\fs24 \
+\
+Copyright (c) 2009 Kemenaran\
+\
+Permission is hereby granted, free of charge, to any person\
+obtaining a copy of this software and associated documentation\
+files (the "Software"), to deal in the Software without\
+restriction, including without limitation the rights to use,\
+copy, modify, merge, publish, distribute, sublicense, and/or sell\
+copies of the Software, and to permit persons to whom the\
+Software is furnished to do so, subject to the following\
+conditions:\
+	\
+The above copyright notice and this permission notice shall be\
+included in all copies or substantial portions of the Software.\
+	\
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,\
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\
+OTHER DEALINGS IN THE SOFTWARE.}
