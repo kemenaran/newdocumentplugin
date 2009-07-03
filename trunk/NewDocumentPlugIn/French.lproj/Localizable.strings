@@ -1,0 +1,14 @@
+﻿/* Title of the submenu */
+"submenuTitle" = "Nouveau document";
+
+/* Name of templates as displayed in menus */
+"templateMenuName" = "Nouveau document %1$@";
+
+/* Name of new documents created from templates */
+"templateDocumentName" = "document %1$@ sans titre";
+
+/* Templates names specific override
+ * Replace the name of a template by a localized one.
+ * If none is provided, the original filename is used.
+ */
+"Text" = "texte";
